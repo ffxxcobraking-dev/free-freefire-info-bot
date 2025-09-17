@@ -252,6 +252,10 @@ class InfoCommands(commands.Cog):
                         f"    **├─ BP Badges**: {captain_info.get('badgeCnt', '?')}",
                         f"    **├─ BR Rank**: {'' if captain_info.get('showBrRank') else 'Not found'} {captain_info.get('rankingPoints', 'Not found')}",
                         f"    **└─ CS Rank**: {'' if captain_info.get('showCsRank') else 'Not found'} {captain_info.get('csRankingPoints', 'Not found')} "
+invite_link = "https://discord.gg/uQG22TaD5v"
+
+embed.set_footer(text="AHSAN")
+embed.description = f"[🔗 JOIN]({invite_link})"
                     ])
                 embed.add_field(name="", value="\n".join(guild_info), inline=False)
 
