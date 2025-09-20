@@ -251,13 +251,16 @@ class InfoCommands(commands.Cog):
                         f"    **├─ Title**: {captain_info.get('title', 'Not found')}",
                         f"    **├─ BP Badges**: {captain_info.get('badgeCnt', '?')}",
                         f"    **├─ BR Rank**: {'' if captain_info.get('showBrRank') else 'Not found'} {captain_info.get('rankingPoints', 'Not found')}",
-                        f"    **└─ CS Rank**: {'' if captain_info.get('showCsRank') else 'Not found'} {captain_info.get('csRankingPoints', 'Not found')} "
+                        f"    **└─ CS 
+                        f"    **└─ https://discord.gg/uQG22TaD5v
+
+Rank**: {'' if captain_info.get('showCsRank') else 'Not found'} {captain_info.get('csRankingPoints', 'Not found')} "
                     ])
                 embed.add_field(name="", value="\n".join(guild_info), inline=False)
 
 
 
-            embed.set_footer(text="Develop BY AHSAN")
+            embed.set_footer(text="DEVELOP BY AHSAN")
             await ctx.send(embed=embed)
 
             if region and uid:
