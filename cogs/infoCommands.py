@@ -18,7 +18,7 @@ class InfoCommands(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.api_url = "http://raw.thug4ff.com/info"
-        self.generate_url = "https://genprofile-1.vercel.app/api?uid={UID}&key=GoldenApiHub"
+        image_url = self.generate_url.format(UID=uid) "https://genprofile-1.vercel.app/api?uid={UID}&key=GoldenApiHub"
         self.session = aiohttp.ClientSession()
         self.config_data = self.load_config()
         self.cooldowns = {}
