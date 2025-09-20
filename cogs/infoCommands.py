@@ -17,8 +17,8 @@ CONFIG_FILE = "info_channels.json"
 class InfoCommands(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        self.api_url = "https://genprofile-1.vercel.app/api?uid={UID}&key=GoldenApiHub"
-        self.generate_url = "https://genprofile-1.vercel.app/api?uid={UID}&key=GoldenApiHub"
+        self.api_url = "http://raw.thug4ff.com/info"
+        self.generate_url = "http://profile.thug4ff.com/api/profile"
         self.session = aiohttp.ClientSession()
         self.config_data = self.load_config()
         self.cooldowns = {}
@@ -257,7 +257,7 @@ class InfoCommands(commands.Cog):
 
 
 
-            embed.set_footer(text="DEVELOPED BY AHSAN")
+            embed.set_footer(text="JOIN(https://discord.gg/uQG22TaD5v)")
             await ctx.send(embed=embed)
 
             if region and uid:
