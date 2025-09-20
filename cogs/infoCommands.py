@@ -257,7 +257,7 @@ class InfoCommands(commands.Cog):
 
 
 
-            embed.set_footer(text="JOIN(https://discord.gg/uQG22TaD5v)")
+            embed.set_footer(text="Develop BY AHSAN")
             await ctx.send(embed=embed)
 
             if region and uid:
