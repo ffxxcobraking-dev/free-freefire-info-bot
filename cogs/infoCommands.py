@@ -257,13 +257,6 @@ class InfoCommands(commands.Cog):
                         f"    **├─ BR Rank**: {'' if captain_info.get('showBrRank') else 'Not found'} {captain_info.get('rankingPoints', 'Not found')}",
                         f"    **└─  Rank**: {'' if captain_info.get('showCsRank') else 'Not found'} {captain_info.get('csRankingPoints', 'Not found')} "
 
-discord_link = "https://discord.gg/yourserver"
-
-guild_info = [
-                       "**┌  Join our community**",
-                       f"**├─ Discord**: {discord_link}"
-
-]
                     ])
                 embed.add_field(name="", value="\n".join(guild_info), inline=False)
 
