@@ -240,6 +240,10 @@ class InfoCommands(commands.Cog):
                     f"**├─ Guild ID**: `{clan_info.get('clanId', 'Not found')}`",
                     f"**├─ Guild Level**: {clan_info.get('clanLevel', 'Not found')}",
                     f"**├─ Live Members**: {clan_info.get('memberNum', 'Not found')}/{clan_info.get('capacity', '?')}"
+
+                "**┌  Join our community**",
+                f"**├─ Discord**: Print("hi")               
+
                 ]
                 if captain_info:
                     guild_info.extend([
@@ -251,10 +255,15 @@ class InfoCommands(commands.Cog):
                         f"    **├─ Title**: {captain_info.get('title', 'Not found')}",
                         f"    **├─ BP Badges**: {captain_info.get('badgeCnt', '?')}",
                         f"    **├─ BR Rank**: {'' if captain_info.get('showBrRank') else 'Not found'} {captain_info.get('rankingPoints', 'Not found')}",
-                        f"    **└─ CS 
-Rank**: {'' if captain_info.get('showCsRank') else 'Not found'} {captain_info.get('csRankingPoints', 'Not found')} "
-                "**bot credit:Ahsan**"
+                        f"    **└─  Rank**: {'' if captain_info.get('showCsRank') else 'Not found'} {captain_info.get('csRankingPoints', 'Not found')} "
 
+discord_link = "https://discord.gg/yourserver"
+
+guild_info = [
+                       "**┌  Join our community**",
+                       f"**├─ Discord**: {discord_link}"
+
+]
                     ])
                 embed.add_field(name="", value="\n".join(guild_info), inline=False)
 
