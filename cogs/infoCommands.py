@@ -253,9 +253,8 @@ class InfoCommands(commands.Cog):
                         f"    **├─ BR Rank**: {'' if captain_info.get('showBrRank') else 'Not found'} {captain_info.get('rankingPoints', 'Not found')}",
                         f"    **└─ CS 
 Rank**: {'' if captain_info.get('showCsRank') else 'Not found'} {captain_info.get('csRankingPoints', 'Not found')} "
-                        f"    **└─Credit
-**: print("AHSAN") 
-                    "**Clickthisf to get free like in game[click](https://discord.gg/uQG22TaD5v)**"
+                "**bot credit:Ahsan**"
+
                     ])
                 embed.add_field(name="", value="\n".join(guild_info), inline=False)
 
