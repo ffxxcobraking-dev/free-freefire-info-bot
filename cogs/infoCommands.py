@@ -251,8 +251,11 @@ class InfoCommands(commands.Cog):
                         f"    **├─ Title**: {captain_info.get('title', 'Not found')}",
                         f"    **├─ BP Badges**: {captain_info.get('badgeCnt', '?')}",
                         f"    **├─ BR Rank**: {'' if captain_info.get('showBrRank') else 'Not found'} {captain_info.get('rankingPoints', 'Not found')}",
-                        f"    **└─ CS Rank**: {'' if captain_info.get('showCsRank') else 'Not found'} {captain_info.get('csRankingPoints', 'Not found')} "
-                    "**┌  [click](https://discord.gg/uQG22TaD5v)**"
+                        f"    **└─ CS 
+Rank**: {'' if captain_info.get('showCsRank') else 'Not found'} {captain_info.get('csRankingPoints', 'Not found')} "
+                        f"    **└─Credit
+**: print("AHSAN") 
+                    "**Clickthisf to get free like in game[click](https://discord.gg/uQG22TaD5v)**"
                     ])
                 embed.add_field(name="", value="\n".join(guild_info), inline=False)
 
