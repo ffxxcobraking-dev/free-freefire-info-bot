@@ -257,7 +257,7 @@ class InfoCommands(commands.Cog):
 
 
 
-            embed.set_footer(text="DEVELOPED BY THUG")
+            embed.set_footer(text="DEVELOPED BY AHSAN")
                     embed.description += "\n🔗 JOIN : https://discord.gg/awPm5B3QFg"
             await ctx.send(embed=embed)
 
