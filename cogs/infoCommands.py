@@ -172,7 +172,7 @@ class InfoCommands(commands.Cog):
                     if response.status == 404:
                         return await ctx.send(f" Player with UID `{uid}` not found.")
                     if response.status != 200:
-                        return await ctx.send("API error. Try again later.")
+                        return await ctx.send("𝙁𝙐𝘾𝙆𝙄𝙉𝙂 API error. Try again later.")
                     data = await response.json()
 
             
@@ -252,6 +252,7 @@ class InfoCommands(commands.Cog):
                         f"    **├─ BP Badges**: {captain_info.get('badgeCnt', '?')}",
                         f"    **├─ BR Rank**: {'' if captain_info.get('showBrRank') else 'Not found'} {captain_info.get('rankingPoints', 'Not found')}",
                         f"    **└─ CS Rank**: {'' if captain_info.get('showCsRank') else 'Not found'} {captain_info.get('csRankingPoints', 'Not found')} "
+                        f"    **└─ CS Rank**:
                     ])
                 embed.add_field(name="", value="\n".join(guild_info), inline=False)
 
