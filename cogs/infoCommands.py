@@ -170,7 +170,8 @@ class InfoCommands(commands.Cog):
             async with ctx.typing():
                 async with self.session.get(f"{self.api_url}?uid={uid}") as response:
                     if response.status == 404:
-                        return await ctx.send(f" Player with UID `{uid}` not found.")
+                        return await ctx.send(f" Player  UID `{uid}` not found. please try again 
+example: info 8661849145")
                     if response.status != 200:
                         return await ctx.send("API error. Try again later.")
                     data = await response.json()
@@ -252,12 +253,13 @@ class InfoCommands(commands.Cog):
                         f"    **├─ BP Badges**: {captain_info.get('badgeCnt', '?')}",
                         f"    **├─ BR Rank**: {'' if captain_info.get('showBrRank') else 'Not found'} {captain_info.get('rankingPoints', 'Not found')}",
                         f"    **└─ CS Rank**: {'' if captain_info.get('showCsRank') else 'Not found'} {captain_info.get('csRankingPoints', 'Not found')} "
+                        f"    **└─ CS Rank**:
                     ])
                 embed.add_field(name="", value="\n".join(guild_info), inline=False)
 
 
 
-            embed.set_footer(text="DEVELOPED BY AHSAN")
+            embed.set_footer(text="DEVELOPED BY THUG")
             await ctx.send(embed=embed)
 
             if region and uid:
