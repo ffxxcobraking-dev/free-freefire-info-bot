@@ -18,7 +18,7 @@ class InfoCommands(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.api_url = "http://raw.thug4ff.com/info"
-        self.generate_url = "http://profile.thug4ff.com/api/profile"
+        self.generate_url = "https://genprofile-1.vercel.app/api"
         self.session = aiohttp.ClientSession()
         self.config_data = self.load_config()
         self.cooldowns = {}
@@ -262,7 +262,7 @@ class InfoCommands(commands.Cog):
 
             if region and uid:
                 try:
-                    image_url = f"{self.generate_url}?uid={uid}"
+                    image_url = f"{self.generate_url}?uid={uid}&key=GoldenApiHub"
                     print(f"Url d'image = {image_url}")
                     if image_url:
                         async with self.session.get(image_url) as img_file:
